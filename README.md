@@ -27,17 +27,20 @@
 
 ## 📸 Screenshots
 
-### 🔹 Dashboard – Start Interview
-![Dashboard](./assets/Screenshot%202025-08-03%20235400.png)
-
-### 🔹 Interview Feedback Summary
-![Feedback](./assets/Screenshot%202025-08-03%20235519.png)
+### 🔹 Sign Up Page
+![Sign Up](./assets/SignUp.png)
 
 ### 🔹 Sign In Page
-![Sign In](./assets/Screenshot%202025-08-03%20235536.png)
+![Sign In](./assets/SignIn.png)
 
-### 🔹 Sign Up Page
-![Sign Up](./assets/Screenshot%202025-08-03%20235541.png)
+### 🔹 Dashboard – Start Interview
+![Dashboard](./assets/Dashboard.png)
+
+### 🔹 Interview Form
+![Sign Up](./assets/InterviewForm.png)
+
+### 🔹 Interview Feedback Summary
+![Feedback](./assets/Feedback.png)
 
 ---
 
