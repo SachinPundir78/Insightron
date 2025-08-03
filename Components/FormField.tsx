@@ -1,48 +1,47 @@
-import { Controller, Control, FieldValues, Path } from "react-hook-form";
-
+import React from "react";
+import { Control, Controller, FieldValues, Path } from "react-hook-form";
 import {
+  FormControl,
+  FormDescription,
   FormItem,
   FormLabel,
-  FormControl,
   FormMessage,
-} from "@/Components/ui/form";
-import { Input } from "@/Components/ui/input";
+} from "./ui/form";
+import { Input } from "./ui/input";
 
 interface FormFieldProps<T extends FieldValues> {
   control: Control<T>;
   name: Path<T>;
   label: string;
   placeholder?: string;
-  type?: "text" | "email" | "password";
+  type?: "text" | "email" | "password" | "file";
 }
 
-const FormField = <T extends FieldValues>({
+const FromField = ({
   control,
   name,
   label,
   placeholder,
   type = "text",
-}: FormFieldProps<T>) => {
-  return (
-    <Controller
-      control={control}
-      name={name}
-      render={({ field }) => (
-        <FormItem>
-          <FormLabel className="label">{label}</FormLabel>
-          <FormControl>
-            <Input
-              className="input"
-              type={type}
-              placeholder={placeholder}
-              {...field}
-            />
-          </FormControl>
-          <FormMessage />
-        </FormItem>
-      )}
-    />
-  );
-};
+}: FormFieldProps<T>) => (
+  <Controller
+    control={control}
+    name={name}
+    render={({ field }) => (
+      <FormItem>
+        <FormLabel className="label">{label}</FormLabel>
+        <FormControl>
+          <Input
+            placeholder={placeholder}
+            className="input"
+            {...field}
+            type={type}
+          />
+        </FormControl>
+        <FormMessage />
+      </FormItem>
+    )}
+  />
+);
 
-export default FormField;
+export default FromField;
