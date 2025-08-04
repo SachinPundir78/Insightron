@@ -40,7 +40,7 @@
 ![Sign Up](./assets/InterviewForm.png)
 
 ### 🔹 Interview Feedback Summary
-![Feedback](./assets/Feedback.png)
+![Feedback](./assets/FeedBack.png)
 
 ---
 
