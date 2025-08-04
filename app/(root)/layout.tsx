@@ -11,7 +11,7 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
   if (!isUserAuthenticated) redirect("/sign-in");
   return (
     <div className="root-layout">
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center mb-3">
         <Link href="/" className="flex items-center gap-4">
           <Image src="/jasper-ai.svg" alt="logo" width={70} height={50} />
           <h2 className="text-primary-100">InsighTron</h2>

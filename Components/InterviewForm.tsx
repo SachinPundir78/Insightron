@@ -66,7 +66,7 @@ const InterviewForm = ({ userName, userId }: InterviewFormProps) => {
   };
 
   return (
-    <div className="max-w-md mx-auto card-border max-sm:min-w-[310px] lg:min-w-[520px] p-6 rounded-lg shadow-md">
+    <div className="max-w-md mx-auto card-border max-sm:min-w-[310px] lg:min-w-[450px] p-6 rounded-lg shadow-md">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <Label htmlFor="role" className="mb-2">

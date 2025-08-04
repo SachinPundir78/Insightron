@@ -10,7 +10,7 @@ const Page = async () => {
   }
 
   return (
-    <div className="container mx-auto flex justify-center align-middle py-8">
+    <div className="container mx-auto flex justify-center align-middle py-3 ">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-4">Generate New Interview</h1>
