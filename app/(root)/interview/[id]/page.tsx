@@ -18,15 +18,15 @@ const InterviewDetails = async ({ params }: RouteParams) => {
 
   return (
     <>
-      <div className="flex flex-row gap-4 justify-between">
+      <div className="flex flex-row gap-7 justify-between">
         <div className="flex flex-row gap-4 items-center max-sm:flex-col">
           <div className="flex flex-row gap-4 items-center">
             <Image
               src={getRandomInterviewCover()}
               alt="cover-image"
-              width={40}
-              height={40}
-              className="rounded-full object-cover size-[40px]"
+              width={50}
+              height={50}
+              className="rounded-full object-cover size-[60px]"
             />
             <h3 className="capitalize">{interview.role} Interview</h3>
           </div>
@@ -34,7 +34,7 @@ const InterviewDetails = async ({ params }: RouteParams) => {
           <DisplayTechIcons techStack={interview.techstack} />
         </div>
 
-        <p className="bg-dark-200 px-4 py-2 rounded-lg h-fit">
+        <p className="bg-dark-200 px-4 py-2 rounded-lg h-fit mt-3">
           {interview.type}
         </p>
       </div>
